@@ -1,0 +1,11 @@
+# Application properties
+spring.application.name=webhook-challenge
+server.port=8080
+
+# Logging configuration
+logging.level.com.bajajfinserv.webhook=INFO
+logging.pattern.console=%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+
+# HTTP client configuration
+spring.http.client.connect-timeout=30000
+spring.http.client.read-timeout=30000

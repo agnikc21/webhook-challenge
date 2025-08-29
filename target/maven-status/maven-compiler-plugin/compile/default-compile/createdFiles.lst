@@ -1,0 +1,5 @@
+com\bajajfinserv\webhook\SolutionRequest.class
+com\bajajfinserv\webhook\WebhookApplication.class
+com\bajajfinserv\webhook\WebhookResponse.class
+com\bajajfinserv\webhook\WebhookService.class
+com\bajajfinserv\webhook\WebhookRequest.class
