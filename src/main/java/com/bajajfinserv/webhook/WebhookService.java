@@ -22,16 +22,13 @@ public class WebhookService {
 
     public void processWebhookFlow() {
         try {
-            // Step 1: Generate webhook
             WebhookResponse webhookResponse = generateWebhook();
             
             if (webhookResponse != null) {
                 logger.info("Webhook generated successfully");
                 
-                // Step 2: Solve SQL problem (Question 2)
                 String sqlQuery = solveSqlProblem();
                 
-                // Step 3: Submit solution
                 submitSolution(webhookResponse.getAccessToken(), sqlQuery);
             }
             
@@ -70,13 +67,11 @@ public class WebhookService {
     }
 
     private String solveSqlProblem() {
-        // Solving Question 2 directly as requested
         logger.info("Solving Question 2 - Count younger employees by department");
         return getSqlQuery();
     }
 
     private String getSqlQuery() {
-        // Solution for Question 2: Count younger employees in same department
         String sqlQuery = """
             SELECT 
                 e1.EMP_ID,
