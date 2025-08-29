@@ -17,7 +17,6 @@ public class WebhookApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // This will execute on application startup
         webhookService.processWebhookFlow();
     }
 }
